@@ -57,7 +57,7 @@ const Navbar = () => {
         </form>
         <ul>
           <li>
-            <a>
+            <a href='#'>
               <span class='material-symbols-outlined'>person</span>
             </a>
           </li>
@@ -85,13 +85,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a>
+              <a href='#'>
                 <span class='material-symbols-outlined'>info</span>
                 <span className={classes.space}>ABOUT</span>
               </a>
             </li>
             <li>
-              <a>
+              <a href='#'>
                 <span class='material-symbols-outlined'>contact_page</span>
                 <span className={classes.space}>CONTACT</span>
               </a>
