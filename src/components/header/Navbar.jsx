@@ -57,9 +57,9 @@ const Navbar = () => {
         </form>
         <ul>
           <li>
-            <a href='#'>
+            <Link to='/home'>
               <span class='material-symbols-outlined'>person</span>
-            </a>
+            </Link>
           </li>
           <li>
             <Link to='/cart' className={btnClasses}>
@@ -85,16 +85,16 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='/home'>
                 <span class='material-symbols-outlined'>info</span>
                 <span className={classes.space}>ABOUT</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='/home'>
                 <span class='material-symbols-outlined'>contact_page</span>
                 <span className={classes.space}>CONTACT</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </aside>
