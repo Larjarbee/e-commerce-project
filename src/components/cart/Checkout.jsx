@@ -1,8 +1,9 @@
 import React from 'react';
+import PaystackPop from '@paystack/inline-js';
 import useInput from '../../store/use-input';
 import classes from './Checkout.module.css';
 
-const Checkout = (props) => {
+const Checkout = (props, { totalAmount }) => {
   const {
     value: enteredFirstname,
     isValid: firstnameIsValid,
@@ -60,6 +61,21 @@ const Checkout = (props) => {
     if (!formIsValid) {
       return;
     }
+
+    const paystack = new PaystackPop();
+    paystack.newTransaction({
+      key: 'pk_test_0deead23ca0da7dcae6ed5624bc499060f0c261e',
+      amount: totalAmount * 100,
+      email: enteredEmail,
+      name: enteredFirstname,
+      onSuccess(transaction) {
+        let msg = `Payment success! Reference ${transaction.reference}`;
+        alert(msg);
+      },
+      onCancel() {
+        alert('Transaction Cancel!');
+      },
+    });
 
     props.onConfirm({
       firstname: enteredFirstname,
