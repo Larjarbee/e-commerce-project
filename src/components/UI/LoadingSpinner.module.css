@@ -1,7 +1,7 @@
 .spinner {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin: 3rem auto;
 }
 
@@ -12,8 +12,8 @@
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid teal;
-  border-color: teal transparent teal transparent;
+  border: 6px solid #aea266;
+  border-color: #aea266 transparent #aea266 transparent;
   animation: spinner 1.2s linear infinite;
 }
 
