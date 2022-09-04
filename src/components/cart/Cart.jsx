@@ -80,7 +80,6 @@ const Cart = () => {
             <Checkout
               hideCheckout={hideCheckoutHandler}
               onConfirm={submitOrderHandler}
-              {...totalAmount}
             />
           )}
         </div>

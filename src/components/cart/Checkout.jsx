@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CartContext from '../../store/cart-context';
 import PaystackPop from '@paystack/inline-js';
 import useInput from '../../store/use-input';
 import classes from './Checkout.module.css';
 
-const Checkout = (props, { totalAmount }) => {
+const Checkout = (props) => {
+  const cartCtx = useContext(CartContext);
+
+  const totalAmount = cartCtx.totalAmount.toFixed(2);
+
   const {
     value: enteredFirstname,
     isValid: firstnameIsValid,
