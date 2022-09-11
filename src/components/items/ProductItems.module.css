@@ -53,6 +53,10 @@
   .top {
     margin-top: 20%;
   }
+
+  .top h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {

@@ -20,14 +20,11 @@
   font: inherit;
   padding: 0.5rem 3rem;
   border-radius: 6px;
-  border: 1px solid #aea266;
-  color: #aea266;
   outline: none;
 }
 
 .productfilter select:hover {
   border: 1px solid #dbce8c;
-  color: #dbce8c;
 }
 
 @media only screen and (max-width: 600px) {
